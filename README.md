@@ -1,4 +1,4 @@
-# 11_time_series_prophet_forecast
+# Time Series Analysis with Prophet
 
 With over 200 million users, MercadoLibre is the most popular e-commerce site in Latin America. This project analyzes the company's financial and user data in an effort to find clever ways to make the company grow. The goal is determine if the ability to predict search traffic can translate into the ability to successfully trade the stock.
 
@@ -64,11 +64,22 @@ To run the script for the Fund Portfolio Risk Return Analysis:
 4. Run the code cells by clicking on the run button or by pressing the `Shift + Enter` key combination to load and preprocess the data, and generate visualizations
 
 
-## Time Series Model with Prophet
+## Time Series Trends & Models with Prophet
 
-![XXX](XXX.png)
+Forecast Plots
+![forecast_plots](forecast_plots.png)
 
+Heatmap
+![heatmaap](heatmap.png)
 
+Prophet Predictions 
+![prophet_predictions](prophet_predictions.png)
+
+Prophet Model
+![prophet_model](prophet_model.png)
+
+Yhat Plots 
+![yhats](yhats.png)
 
 ## Contributors
 
