@@ -18,7 +18,8 @@ Interactive Development Environment: JupyterLab & Google Colab
 
 Libraries: 
 - Pandas - A Python library that is used for data manipulation, analysis, and visualization. 
-- Prophet - Prophet is a time series forecasting library developed by Facebook's Core Data Science team. Prophet is built in Python and is widely used for a variety of applications, such as demand forecasting, sales forecasting, and resource planning. 
+- Sqlalchemy - An open-source SQL library for Python designed to ease the communication between Python-based programs and databases. 
+- Voilà - A Python library which allows you to convert a Jupyter notebook into a live webpage. 
 - Numpy - A popular open-source numerical computing library for Python which provides a powerful array object and a collection of mathematical functions. 
 - HvPlot - A Python library that provides a high-level interface for quickly creating interactive plots and visualizations using popular plotting libraries such as Matplotlib, Bokeh, and Plotly.
 - Warnings - A Python library that provides a way to handle warning messages that may occur during the execution of a program.
@@ -31,27 +32,26 @@ To run this analysis, make sure you install the necessary dependencies:
 
 1. Install Python: https://www.python.org/downloads/
 2. Install and run Jupyter Lab:  https://jupyter.org/install
-3. Open and congfigure Google Colab: https://colab.research.google.com/
-- The first cell will install the necessary libraries into the Google Colab runtime.
+3. Install Anaconda: https://docs.anaconda.com/free/anaconda/install/
+4. Install the necessary libraries using pip, the package installer for Python:
 ```
-!pip install pystan
-!pip install prophet
-!pip install hvplot
-!pip install holoviews
+pip install pandas numpy hvplot SQLAlchemy
 ```
-- The second cell will import the dependencies for use in the notebook.
+To check if sqlalchemy is already installed, run the following command:
 ```
-import pandas as pd
-import holoviews as hv
-from prophet import Prophet
-import hvplot.pandas
-import datetime as dt
-import numpy as np
-%matplotlib inline
-import warnings
-warnings.filterwarnings('ignore')
+ conda list sqlalchemy
 ```
-4. Clone the repository: `git clone "https://github.com/mikenguyenx/11_time_series_prophet_forecast"` using git or download the ZIP file and extract it to a local directory.
+If it is installed, the following should be displayed:
+![sqlalchemy_install](sqlalchemy_install.png)
+
+To install Voilà, run the following command:
+```
+conda install -c conda-forge voila
+```
+After installation for voila is complete, the following should be displayed:
+![voila_install](voila_install.png)
+
+5. Clone the repository: `git clone "https://github.com/mikenguyenx/7_passive_investing_sql"` using git or download the ZIP file and extract it to a local directory.
 
 
 ## Usage
@@ -59,15 +59,18 @@ warnings.filterwarnings('ignore')
 To run the script for the Fund Portfolio Risk Return Analysis:
 
 1. Open a terminal or command prompt and navigate to the directory with the analysis.
-2. Launch Google Colab: https://colab.research.google.com/
-3. Open `forecasting_net_prophet.ipynb` in Google Colab.
+2. Launch Jupyter Lab: jupyter lab.  Alternatively, you can use Google Colab: https://colab.research.google.com/
+3. Open `etf_analyzer.ipynb` in Jupyter Lab / Google Colab.
 4. Run the code cells by clicking on the run button or by pressing the `Shift + Enter` key combination to load and preprocess the data, and generate visualizations
+5. This project involves building a financial database and web application by using SQL, Python, and the Voilà library to analyze the performance of a hypothetical fintech ETF.
 
+## Cumulative Returns Interactive Plot
 
-## Time Series Model with Prophet
+![cumulative_returns](cumulative_returns.png)
 
-![XXX](XXX.png)
+## Web Application Deployment (Voilà) 
 
+[voila_clip.webm](https://github.com/mikenguyenx/7_passive_investing_sql/assets/127016510/6e6791be-6e7a-4e0b-85b2-afb56c43171f)
 
 
 ## Contributors
