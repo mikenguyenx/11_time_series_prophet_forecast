@@ -52,7 +52,7 @@ import warnings
 warnings.filterwarnings('ignore')
 ```
 4. Clone the repository: `git clone "https://github.com/mikenguyenx/11_time_series_prophet_forecast"` using git or download the ZIP file and extract it to a local directory.
-
+5. Alternatively, you can use this Google Colab link to access the jupter lab file:  https://colab.research.google.com/drive/1ENQ73szUyrEpOrdArEvfHEFq4oZ2NYdH#scrollTo=Or4ED4hM3z3z
 
 ## Usage
 
@@ -66,19 +66,19 @@ To run the script for the Fund Portfolio Risk Return Analysis:
 
 ## Time Series Trends & Models with Prophet
 
-Forecast Plots
+### Forecast Plots
 ![forecast_plots](forecast_plots.png)
 
-Heatmap
+### Heatmap
 ![heatmaap](heatmap.png)
 
-Prophet Predictions 
+### Prophet Predictions 
 ![prophet_predictions](prophet_predictions.png)
 
-Prophet Model
+### Prophet Model
 ![prophet_model](prophet_model.png)
 
-Yhat Plots 
+### Yhat Plots 
 ![yhats](yhats.png)
 
 ## Contributors
